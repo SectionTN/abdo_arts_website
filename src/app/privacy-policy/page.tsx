@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function PrivacyPolicy() {
     return (
         <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
             <header className="w-full flex justify-between items-center">
@@ -30,33 +30,43 @@ export default function Home() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
-                    className="text-5xl sm:text-6xl font-bold mb-6 text-center"
+                    className="text-3xl sm:text-4xl font-bold mb-8 text-center"
                 >
-                    Abdo Arts
+                    Privacy Policy
                 </motion.h1>
 
-                <motion.p
+                <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.3 }}
-                    className="text-lg text-center text-gray-700 dark:text-gray-300 mb-8 max-w-xl"
+                    className="space-y-6 w-full bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm mb-8"
                 >
-                    Discover a world of artistic expression through our collection of unique digital and traditional artworks. We blend creative vision with technical expertise to bring imagination to life.
-                </motion.p>
-
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                    className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mb-12"
-                >
-                    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <h3 className="font-bold text-xl mb-2">Digital Art</h3>
-                        <p className="text-gray-600 dark:text-gray-400">Explore our digital creations made with passion and precision.</p>
+                    <div>
+                        <h2 className="text-xl font-semibold mb-3">Our Commitment to Privacy</h2>
+                        <p className="text-gray-700 dark:text-gray-300">
+                            Our app doesn't collect data or even have network permission. We believe in creating a safe, private experience for all our users.
+                        </p>
                     </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <h3 className="font-bold text-xl mb-2">Traditional Art</h3>
-                        <p className="text-gray-600 dark:text-gray-400">Hand-crafted pieces that capture moments and emotions.</p>
+
+                    <div>
+                        <h2 className="text-xl font-semibold mb-3">Data Collection</h2>
+                        <p className="text-gray-700 dark:text-gray-300">
+                            We do not collect, store, or process any personal information. Our application operates entirely offline, ensuring your privacy is maintained at all times.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-xl font-semibold mb-3">Third-Party Services</h2>
+                        <p className="text-gray-700 dark:text-gray-300">
+                            Since our app doesn't connect to the internet, we don't use any third-party services that might collect your data.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
+                        <p className="text-gray-700 dark:text-gray-300">
+                            If you have any questions about our privacy practices, please reach out to us at contact@abdoarts.com.
+                        </p>
                     </div>
                 </motion.div>
 
@@ -65,13 +75,13 @@ export default function Home() {
                     whileTap={{ scale: 0.95 }}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.7 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     <Link
-                        href="/privacy-policy"
-                        className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-base h-12 px-6"
+                        href="/"
+                        className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-base h-12 px-6"
                     >
-                        Privacy Policy
+                        Back to Home
                     </Link>
                 </motion.div>
             </main>
