@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
                     <div>
                         <h2 className="text-xl font-semibold mb-3">Our Commitment to Privacy</h2>
                         <p className="text-gray-700 dark:text-gray-300">
-                            Our app doesn't collect data or even have network permission. We believe in creating a safe, private experience for all our users.
+                            Our app doesn&#39;t collect data or even have network permission. We believe in creating a safe, private experience for all our users.
                         </p>
                     </div>
 
@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
                     <div>
                         <h2 className="text-xl font-semibold mb-3">Third-Party Services</h2>
                         <p className="text-gray-700 dark:text-gray-300">
-                            Since our app doesn't connect to the internet, we don't use any third-party services that might collect your data.
+                            Since our app doesn&#39;t connect to the internet, we don&#39;t use any third-party services that might collect your data.
                         </p>
                     </div>
 
